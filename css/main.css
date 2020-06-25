@@ -1,0 +1,407 @@
+
+:root{
+    --background-color:  #2028480a;
+    --button-color: #E66DA7;
+    --section-color: #202848;
+}
+
+
+
+/* Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    line-height: 1.3rem;
+}
+/*General*/
+body{
+    background-color: var(--background-color) ;
+}
+
+.container{
+    margin: auto;
+    max-width: 68.75rem;
+}
+.current{
+    color: var(--section-color);
+    background-color: var(--button-color);
+    padding: 1.5rem;
+}
+.line{
+    height: 2px;
+    width: 12.5%;
+    background-color: var(--button-color);
+    margin-bottom: .5rem;
+}
+.btn{
+    color: var(--button-color);
+    background-color: var(--section-color);
+    padding: .5rem;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+.btn:hover{
+    border-top-right-radius: 10px;
+}
+h1, h2{
+    padding-bottom: .5rem;
+    color: var(--section-color);
+}
+.innerContainer{
+    max-width: 65rem;
+    margin: auto;
+}
+img{
+    height: 100%;
+    width: 100%;
+    transition: .5s all ease;
+    opacity: .5;
+}
+img:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+/*Header*/
+header{
+    height: 6.5vh;
+    background-color: var(--section-color);
+    margin-top: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+/*MainAnimation*/
+main{
+    animation: openAnimation forwards 3.5s ease-in-out;
+    z-index: 5;
+}
+/*Nav*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    padding: 1.5rem;
+}
+nav ul li{
+    margin-right: 1rem;
+}
+nav ul li a{
+    color: var(--button-color);
+    font-weight: bold;
+    transition: all .3s ease;
+    padding: 1.5rem;
+}
+nav .social li a {
+    padding: 0;
+}
+nav ul li a:hover{
+    opacity: .75;
+}
+/*Main*/
+/*Showcase*/
+#showcase{
+    height: 50vh;
+    background-color: var(--background-color)
+}
+#showcase .innerContainer{
+    margin: auto;
+    max-width: 100%;
+    padding: 1rem;
+    height: 100%;
+}
+#showcase .innerContainer .showcaseContent{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 100%;
+}
+#showcase .innerContainer .showcaseContent .head{
+    display: flex;
+    flex-direction: column;
+}
+#showcase .innerContainer .showcaseContent .head h1{
+    padding-bottom: .5rem;
+    color: var(--section-color);
+}
+#showcase .innerContainer .showcaseContent .head .line{
+    margin-bottom: .5rem;
+}
+#showcase .innerContainer .showcaseContent .head h2{
+    color: var(--section-color);
+}
+#showcase .innerContainer .showcaseContent .image{
+    height: 100%;
+    width: 100%;
+    margin: 1rem 0;
+    opacity: .6;
+    transition: all .3s ease;
+    background: url('../img/Webcemo.jpg') no-repeat left top/cover;
+}
+#showcase .innerContainer .showcaseContent .image:hover{
+    opacity: 1;
+}
+#showcase .innerContainer .showcaseContent .subImg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#showcase .innerContainer .showcaseContent .subImg p{
+    color: var(--section-color);
+    font-weight: bold;
+}
+/*Projects*/
+#projects{
+    height: 115vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color)
+}
+#projects .innerContainer{
+    margin: auto;
+    max-width: 100%;
+    padding: 1rem;
+    height: 100%;
+}
+#projects .innerContainer h1:last-child{
+    font-size: 1rem;
+    text-align: right;
+}
+#projects .innerContainer .projectsContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+#projects .innerContainer .cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+#projects .innerContainer .cards .card{
+    padding: 1rem;
+}
+#projects .innerContainer .cards .card p{
+    color: var(--section-color);
+    font-weight: bold;
+}
+#projects .innerContainer .cards .card img{
+    align-self: center;
+}
+#projects .innerContainer .cards .card .buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+/*Motivation*/
+#motivation{
+    padding: 1rem;
+    background-color: var(--background-color)
+}
+#motivation .innerContainer{
+    margin: auto;
+    max-width: 100%;
+    padding: 1rem;
+    height: 100%;
+}
+#motivation .innerContainer .motivationContent{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#motivation .innerContainer .motivationContent ul{
+    padding-top: 1rem;
+}
+#motivation .innerContainer .motivationContent ul li{
+    padding: 2rem;
+    border-bottom: 1px solid var(--section-color);
+    color: var(--section-color);
+}
+/*Contact*/
+#contact{
+    height: 22vh;
+    background-color: var(--background-color);
+}
+#contact .innerContainer{
+    margin: auto;
+    max-width: 100%;
+    padding: 1rem;
+    height: 100%;
+}
+#contact .innerContainer .contactContent{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+#contact .innerContainer .contactContent .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 1rem;
+    height: 100%;
+    justify-content: center;
+}
+#contact .innerContainer .contactContent .cards .card{
+    border-left: 1px solid var(--section-color);
+    padding-left: 1rem; 
+}
+#contact .innerContainer .contactContent .cards i{
+    color: var(--button-color);
+    padding-bottom: 1rem;
+    display: flex;
+}
+#contact .innerContainer .contactContent .cards h2{
+    font-size: 1rem;
+}
+#contact .innerContainer .contactContent .cards a{
+    color: var(--button-color);
+    transition: all .3s ease;
+}
+#contact .innerContainer .contactContent .cards a:hover{
+    color: var(--section-color);
+}
+/*Questions*/
+#questions{
+    background-color: var(--background-color);
+}
+#questions .innerContainer{
+    margin: auto;
+    max-width: 100%;
+    padding: 1rem;
+    height: 100%;
+}
+#questions .innerContainer .showcaseContent{
+    display: flex;
+    padding: 1rem;
+}
+#questions .innerContainer .showcaseContent .questions{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+#questions .innerContainer .showcaseContent .questions .head h2{
+    font-size: 1rem;
+}
+#questions .innerContainer .showcaseContent .questions .text p{
+    padding-bottom: 1rem;
+    color: var(--section-color);
+}
+#questions .innerContainer .showcaseContent .questions .text a{
+    color: var(--button-color);
+}
+#questions .innerContainer .showcaseContent .ig{
+    height: 25%;
+    width: 25%;
+}
+#questions .innerContainer .showcaseContent .ig img{
+    opacity: .5;
+}
+#questions .innerContainer .showcaseContent .ig img:hover{
+    transform: none;
+    opacity: 1;
+}
+/*Webcemo*/
+#webcemo{
+    background-color: var(--background-color);
+}
+#webcemo .innerContainer{
+    margin: auto;
+    max-width: 100%;
+    padding: 1rem;
+    height: 100%;
+}
+#webcemo .innerContainer .webcemoContent{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+#webcemo .innerContainer .webcemoContent .images{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+}
+#webcemo .innerContainer .webcemoContent .images .image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#webcemo .innerContainer .webcemoContent .images .image p{
+    color: var(--section-color);
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight: bold;
+}
+
+/*Footer*/
+footer{
+   z-index: 1;
+   height: 7vh;
+   background-color: var(--section-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   animation: footerAnimation forwards 2s ease-in-out;
+}
+footer .footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+footer .footer-content ul{
+    display: flex;
+    padding: .5rem;
+}
+footer .footer-content ul li{
+    margin-right: 1rem;
+}
+footer .footer-content ul li a{
+    color: var(--button-color);
+    transition: all .3s ease;
+}
+footer .footer-content ul li a:hover{
+    opacity: .75;
+}
+footer .footer-content p{
+    padding-top: .5rem;
+    color: var(--background-color);
+    font-size: small;
+    font-weight: lighter;
+    color: var(--button-color);
+}
+
+/*Footer2 without animation*/
+#footer2{
+    animation: none;
+}
+
+/*KeyFrames*/
+@keyframes openAnimation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes footerAnimation{
+    from{
+        transform: translateY(-150rem);
+    }
+    to{
+        transform: translateY(0);
+    }
+}

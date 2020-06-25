@@ -1,0 +1,82 @@
+:root{
+    --background-color:  #2028480a;
+    --button-color: #E66DA7;
+    --section-color: #202848;
+}
+.current{
+    color: var(--section-color);
+    background-color: var(--button-color);
+    padding: .5rem !important;
+}
+.container header{
+    height: 5rem;
+    background-color: var(--section-color);
+    margin-top: 0rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container header nav{
+   display: flex;
+   height: 100%;
+   align-items: center;
+   align-self: center;
+   justify-content: center;
+}
+.container header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container header nav ul li{
+    padding: .5rem;
+}
+.container header nav ul li a{
+    font-size: 1rem;
+    padding: 0;
+}
+.container header nav .social{
+    display: none;
+}
+.container #projects{
+    height: 115rem;
+}
+.container #projects .innerContainer .cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.container #motivation{
+    height: auto;
+
+}
+.container #contact{
+    height: 30rem;
+}
+.container #contact .innerContainer .contactContent .cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.container #contact .innerContainer .contactContent .cards .card{
+    border-bottom: 1px solid var(--section-color);
+    padding: .8rem; 
+    border-left: none;
+}
+.container footer{
+    height: 5rem;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    animation: none;
+ }
+ .container #questions{
+    height: 65rem;
+    background-color: var(--background-color);
+}
+.container #questions .innerContainer .showcaseContent .ig{
+    height: 100%;
+    width: 100%;
+}
